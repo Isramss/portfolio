@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+:root {
+  --title_p: 72px;
+  --title_skill: 40px;
+  --title_H3: 25px;
+  --title_projet: 24px;
+  --text_p: 18px;
+  --text_projet: 14px;
+  --pad_r: 120px;
+  --pad_l: 120px;
+  --pad_Contact: 35px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #151515;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+/*////////////////////////////////Header////////////////////////////////*/
+
+.header {
+  margin-bottom: 222px;
+  padding: 0 0 0 var(--pad_l);
+  margin-right: 120px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 664px 581px;
+  background-image: url("src/assets/image/Eiffel.jpg");
+}
+
+.header_box {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--title_H3);
+  padding-top: 31px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.cercle1 {
+  transform: translate(-350px, 12px);
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--text_p);
+  font-weight: 500;
+}
+
+.para {
+  margin-top: 33px;
+}
+
+.para2 {
+  margin-bottom: 100px;
+}
+
+.btn_contact {
+  color: #fff;
+  border: none;
+  padding: 2px 30px 13px 14px;
+  background: none;
+  border-bottom: 2px solid #4ee1a0;
+}
+
+hr {
+  margin: 0 var(--pad_r) 0 var(--pad_l);
+}
+/*////////////////////////////////Skill////////////////////////////////*/
+
+.skill_box {
+  display: flex;
+  gap: 115px;
+  padding: 0 var(--pad_r) 0 var(--pad_l);
+  margin-top: 71px;
+  font-size: var(--title_skill);
+  font-weight: 700;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/*////////////////////////////////Projet////////////////////////////////*/
+
+.demi-cercle_right {
+  float: right;
+}
+
+.title_andBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 156px var(--pad_r) 80px var(--pad_l);
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 70px;
+  margin: 0 var(--pad_r) 533px var(--pad_l);
+}
+
+img {
+  border-radius: 12px;
+}
+
+.image_grid {
+  width: 400px;
+  height: 290px;
+}
+
+.titre_p {
+  font-size: var(--title_p);
+}
+
+h3 {
+  font-size: var(--title_H3);
+}
+
+.text_projets {
+  margin-top: 44px;
+}
+
+.text_projet {
+  display: flex;
+  word-spacing: 18px;
+  font-size: var(--text_projet);
+}
+
+/*////////////////////////////////Contact////////////////////////////////*/
+
+.box_contact {
+  height: auto;
+  display: flex;
+  background-color: #242424;
+  margin: 0 32px 0 32px;
+  padding: 74px 165px 0;
+  justify-content: space-between;
+}
+
+.para_box {
+  width: 430px;
+}
+
+.demi-cercle_left {
+  transform: translatex(-165px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  border: none;
+  padding: 2px 24px 20px 24px;
+  border-bottom: 1px solid #fff;
+  background-color: unset;
+}
+
+textarea {
+  border: none;
+  padding: 2px 24px 20px 24px;
+  border-bottom: 1px solid #fff;
+  background-color: unset;
+}
+
+.btn_envoyer {
+  color: #fff;
+  border: none;
+  float: inline-end;
+  margin-top: 32px;
+  margin-bottom: 92px;
+  padding: 2px 30px 13px 14px;
+  background: none;
+  border-bottom: 2px solid #4ee1a0;
+}
+
+/*//////////////////////////////FOOTER//////////////////////////////////*/
+
+.footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 42px var(--pad_r) 92px var(--pad_l);
+  background-color: #242424;
+}
